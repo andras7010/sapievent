@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/RelativeLayout01"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:padding="10dp">
+
+<TextView
+    android:id="@+id/app_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Sapi Event"
+    android:textAppearance="@style/TextAppearance.AppCompat"
+    android:layout_alignParentLeft="true"
+    android:textSize="25sp" />
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:text="Sapi Event"
+    android:textAppearance="@style/TextAppearance.AppCompat"
+    android:layout_toStartOf="@+id/profile_image"
+    android:textSize="25sp"
+    android:layout_alignBottom="@+id/app_title" />
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/profile_image"
+    android:layout_width="66dp"
+    android:layout_height="48dp"
+    android:layout_alignParentRight="true"
+    android:adjustViewBounds="false"
+    android:cropToPadding="false"
+    app:civ_border_color="#FF000000"
+    app:civ_border_width="2dp" />
+
+</RelativeLayout>
